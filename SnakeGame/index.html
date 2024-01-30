@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Snake</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="snake.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Snake</h1>
+        </header>
+        
+        <div id="gameView" class="view">
+            
+            <div id="currentScore"></div>
+    
+            <div class="content">
+              <div id="board"></div>
+              <div id ='snake'></div>
+            </div>
+            <button id="restartButton" class="button-primary">Restart</button>
+        </div>
+          
+        <div id = 'menuView' class="view"  style="display: none">
+
+                <div class="content">
+                    <div id = 'gameMenu'></div>
+
+                </div>
+                
+                <button id="startButton" class = 'button'>Start</button>
+                <button id="selectColor" class = 'button'>Select your Snake!</button>
+            </div>
+
+        </div>
+
+        <div id = 'selectView' class="view" style="display: none">
+
+            <div class="content">
+                <div id="snakeOptions"></div>
+                <button id="leftArrowButton" class="button">←</button>
+                <button id="rightArrowButton" class="button">→</button>
+
+            </div>
+ 
+            
+
+        </div>
+
+        
+        <script src = 'src/index.js'></script>
+        <script src = 'src/snakes.js'></script>
+        <script src = 'src/screens.js'></script>
+        <script src = 'src/game.js'></script>
+
+    </body>
+</html>
